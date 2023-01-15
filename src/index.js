@@ -46,7 +46,7 @@ return arr
 .map(({ name, flags}) =>{
   return `<li>
   <img src="${flags.svg}" alt="flag" width='140px' height="auto"</img>
-    <p>${name.official}</p>
+    <p class="name_title">${name.official}</p>
   </li>`;
 })
 .join('');
@@ -59,12 +59,12 @@ return arr
 
   return `<li>
   <div>
-    <img src="${flags.svg}" alt="flag"</img>
+    <img src="${flags.svg}" alt="flag" width='80px' height="auto"</img>
     <h2>${name.official}</h2>
   </div>
-  <p><span>Capital: </span>${capital}</p>
-  <p><span>Population: </span>${population}</p>
-  <p><span>Languages: </span>${langs}</p>
+  <p><span class="name_title">Capital: </span>${capital}</p>
+  <p><span class="name_title">Population: </span>${population}</p>
+  <p><span class="name_title">Languages: </span>${langs}</p>
 </li>`;
 })
 .join('');
